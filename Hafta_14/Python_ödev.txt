@@ -1,0 +1,2767 @@
+C:\Users\TEMP.DESKTOP-GNSQQKM.000>python
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World!
+>>> if 5 > 2:
+...   print("Five is greater than two!")
+... if 5 > 2:
+  File "<stdin>", line 3
+    if 5 > 2:
+    ^^
+SyntaxError: invalid syntax
+>>>  print("Five is greater than two!")
+  File "<stdin>", line 1
+    print("Five is greater than two!")
+IndentationError: unexpected indent
+>>> if 5 > 2:
+...         print("Five is greater than two!")
+... x = 5
+  File "<stdin>", line 3
+    x = 5
+    ^
+SyntaxError: invalid syntax
+>>> y = "Hello, World!"
+>>> #This is a comment.
+>>> print("Hello, World!")
+Hello, World!
+>>> print("Hello,world"!)
+  File "<stdin>", line 1
+    print("Hello,world"!)
+                       ^
+SyntaxError: invalid syntax
+>>> print("Hello,world")
+Hello,world
+>>>
+
+>>> #This is comment
+>>> print("Hello,World!")
+Hello,World!
+>>> print("Hello, World!") #This is a comment
+Hello, World!
+>>> #print("Hello, World!")
+>>> print("Cheers, Mate!")
+Cheers, Mate!
+>>> #This is a comment
+>>> #written in
+>>> #more than just one line
+>>> print("Hello, World!")
+Hello, World!
+>>> """
+... This is a comment
+... written in
+... more than just one line
+... """
+'\nThis is a comment\nwritten in\nmore than just one line\n'
+>>> print("Hello, World!")
+Hello, World!
+>>> #this is a comment
+
+>>> x = 5
+>>> y = "John"
+>>> print(x)
+5
+>>> print(y)
+John
+>>> x = 4       # x is of type int
+>>> x = "Sally" # x is now of type str
+>>> print(x)
+Sally
+>>> x = str(3)    # x will be '3'
+>>> y = int(3)    # y will be 3
+>>> z = float(3)  # z will be 3.0
+>>> x = 5
+>>> y = "John"
+>>> print(type(x))
+<class 'int'>
+>>> print(type(y))
+<class 'str'>
+>>>
+>>> x = str(3)    # x will be '3'
+>>> y = int(3)    # y will be 3
+>>> z = float(3)  # z will be 3.0
+>>>
+>>> x = str(3)    # x will be '3'
+>>> y = int(3)    # y will be 3
+>>> z = float(3)  # z will be 3.0
+>>> print(x)
+3
+>>> print(y)
+3
+>>>
+>>> print(z)
+3.0
+>>> x = "John"
+>>> # is the same as
+>>> x = 'John'
+>>> x="John"
+>>> print(x)
+John
+>>> x='John'
+>>> print(x)
+John
+>>> a = 4
+>>> A = "Sally"
+>>>
+>>> print(a)
+4
+>>> print(A)
+Sally
+>>>
+
+Python - Variable Names
+>>> myvar = "John"
+>>> my_var = "John"
+>>> _my_var = "John"
+>>> myVar = "John"
+>>> MYVAR = "John"
+>>> myvar2 = "John"
+>>>
+>>>
+>>> print(myvar)
+John
+>>> print(my_var)
+John
+>>> print(_my_var)
+John
+>>> print(myVar)
+John
+>>> print(MYVAR)
+John
+>>> print(myvar2)
+John
+>>> 2myvar = "John"
+  File "<stdin>", line 1
+    2myvar = "John"
+    ^
+SyntaxError: invalid decimal literal
+>>> my-var = "John"
+  File "<stdin>", line 1
+    my-var = "John"
+    ^^^^^^
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
+>>> my var = "John"
+  File "<stdin>", line 1
+    my var = "John"
+       ^^^
+SyntaxError: invalid syntax
+>>>
+
+Many Values to Multiple Variables
+>>> x, y, z = "Orange", "Banana", "Cherry"
+>>> print(x)
+Orange
+>>> print(y)
+Banana
+>>> print(z)
+Cherry
+>>> x = y = z = "Orange"
+>>> print(x)
+Orange
+>>> print(y)
+Orange
+>>> print(z)
+Orange
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x, y, z = fruits
+>>> print(x)
+apple
+>>> print(y)
+banana
+>>> print(z)
+cherry
+
+Python - Output Variables
+
+>>> x = "awesome"
+>>> print("Python is " + x)
+Python is awesome
+>>> x = "Python is "
+>>> y = "awesome"
+>>> z =  x + y
+>>> print(z)
+Python is awesome
+>>> x = 5
+>>> y = 10
+>>> print(x + y)
+15
+>>> x = 5
+>>> y = "John"
+>>> print(x + y)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Python - Global Variables
+>>> x = "awesome"
+>>>
+>>> def myfunc():
+...   print("Python is " + x)
+...
+>>> myfunc()
+Python is awesome
+>>> x = "awesome"
+>>>
+>>> def myfunc():
+...   x = "fantastic"
+...   print("Python is " + x)
+...
+>>> myfunc()
+Python is fantastic
+>>>
+>>> print("Python is " + x)
+Python is awesome
+>>> def myfunc():
+...   global x
+...   x = "fantastic"
+...
+>>> myfunc()
+>>>
+>>> print("Python is " + x)
+Python is fantastic
+>>> x = "awesome"
+>>>
+>>> def myfunc():
+...   global x
+...   x = "fantastic"
+...
+>>> myfunc()
+>>>
+>>> print("Python is " + x)
+Python is fantastic
+>>>
+Python - Variable Exercises
+>>> carname="Volvo"
+
+Python Data Types
+ x = 5
+>>> print(type(x))
+<class 'int'>
+>>> x = "Hello World"
+>>>
+
+Setting the Data Type
+
+>>> #display x:
+>>> print(x)
+Hello World
+>>>
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'str'>
+>>> x = 20
+>>>
+>>> #display x:
+>>> print(x)
+20
+>>>
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'int'>
+>>> x = 20.5
+>>> #display x:
+>>> print(x)
+20.5
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'float'>
+>>> x = 1j
+>>> #display x:
+>>> print(x)
+1j
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'complex'>
+>>> x = ["apple", "banana", "cherry"]
+>>> #display x:
+>>> print(x)
+['apple', 'banana', 'cherry']
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'list'>
+>>> x = ("apple", "banana", "cherry")
+>>> #display x:
+>>> print(x)
+('apple', 'banana', 'cherry')
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'tuple'>
+>>> x = range(6)
+>>> #display x:
+>>> print(x)
+range(0, 6)
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'range'>
+>>> x = {"name" : "John", "age" : 36}
+>>> #display x:
+>>> print(x)
+{'name': 'John', 'age': 36}
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'dict'>
+>>> x = {"apple", "banana", "cherry"}
+>>> #display x:
+>>> print(x)
+{'cherry', 'apple', 'banana'}
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'set'>
+>>> x = frozenset({"apple", "banana", "cherry"})
+>>> #display x:
+>>> print(x)
+frozenset({'cherry', 'apple', 'banana'})
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'frozenset'>
+>>> x = True
+>>> #display x:
+>>> print(x)
+True
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bool'>
+>>> x = b"Hello"
+>>> #display x:
+>>> print(x)
+b'Hello'
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bytes'>
+>>> x = bytearray(5)
+>>> #display x:
+>>> print(x)
+bytearray(b'\x00\x00\x00\x00\x00')
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bytearray'>
+>>> x = memoryview(bytes(5))
+>>> #display x:
+>>> print(x)
+<memory at 0x000002542479D900>
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'memoryview'>
+>>>
+
+Setting the Specific Data Type
+ x = str("Hello World")
+>>>
+>>> #display x:
+>>> print(x)
+Hello World
+>>>
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'str'>
+>>> x = int(20)
+>>> #display x:
+>>> print(x)
+20
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'int'>
+>>> x = float(20.5)
+>>> #display x:
+>>> print(x)
+20.5
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'float'>
+>>> x = complex(1j)
+>>> #display x:
+>>> print(x)
+1j
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'complex'>
+>>> x = list(("apple", "banana", "cherry"))
+>>> #display x:
+>>> print(x)
+['apple', 'banana', 'cherry']
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'list'>
+>>> x = tuple(("apple", "banana", "cherry"))
+>>> #display x:
+>>> print(x)
+('apple', 'banana', 'cherry')
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'tuple'>
+>>> x = range(6)
+>>> #display x:
+>>> print(x)
+range(0, 6)
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'range'>
+>>> x = dict(name="John", age=36)
+>>> #display x:
+>>> print(x)
+{'name': 'John', 'age': 36}
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'dict'>
+>>> x = set(("apple", "banana", "cherry"))
+>>> #display x:
+>>> print(x)
+{'cherry', 'apple', 'banana'}
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'set'>
+>>> x = frozenset(("apple", "banana", "cherry"))
+>>> #display x:
+>>> print(x)
+frozenset({'cherry', 'apple', 'banana'})
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'frozenset'>
+>>> x = bool(5)
+>>> #display x:
+>>> print(x)
+True
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bool'>
+>>> x = bytes(5)
+>>> #display x:
+>>> print(x)
+b'\x00\x00\x00\x00\x00'
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bytes'>
+>>> x = bytearray(5)
+>>> #display x:
+>>> print(x)
+bytearray(b'\x00\x00\x00\x00\x00')
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'bytearray'>
+>>> x = memoryview(bytes(5))
+>>> #display x:
+>>> print(x)
+<memory at 0x000002542479D900>
+>>> #display the data type of x:
+>>> print(type(x))
+<class 'memoryview'>
+
+
+Python Numbers
+>>> x = 1
+>>> y = 2.8
+>>> z = 1j
+>>> print(type(x))
+<class 'int'>
+>>> print(type(y))
+<class 'float'>
+>>> print(type(z))
+<class 'complex'>
+>>> x = 1
+>>> y = 35656222554887711
+>>> z = -3255522
+>>> print(type(x))
+<class 'int'>
+>>> print(type(y))
+<class 'int'>
+>>> print(type(z))
+<class 'int'>
+>>> x = 1.10
+>>> y = 1.0
+>>> z = -35.59
+>>> print(type(x))
+<class 'float'>
+>>> print(type(y))
+<class 'float'>
+>>> print(type(z))
+<class 'float'>
+>>> x = 35e3
+>>> y = 12E4
+>>> z = -87.7e100
+>>> print(type(x))
+<class 'float'>
+>>> print(type(y))
+<class 'float'>
+>>> print(type(z))
+<class 'float'>
+>>> x = 3+5j
+>>> y = 5j
+>>> z = -5j
+>>> print(type(x))
+<class 'complex'>
+>>> print(type(y))
+<class 'complex'>
+>>> print(type(z))
+<class 'complex'>
+>>> #convert from int to float:
+>>> x = float(1)
+>>> #convert from float to int:
+>>> y = int(2.8)
+>>> #convert from int to complex:
+>>> z = complex(x)
+>>> print(x)
+1.0
+>>> print(y)
+2
+>>> print(z)
+(1+0j)
+>>> print(type(x))
+<class 'float'>
+>>> print(type(y))
+<class 'int'>
+>>> print(type(z))
+<class 'complex'>
+>>> import random
+>>> print(random.randrange(1, 10))
+4
+>>>
+
+
+Python Casting
+>> x = int(1)
+>>> y = int(2.8)
+>>> z = int("3")
+>>> print(x)
+1
+>>> print(y)
+2
+>>> print(z)
+3
+>>> x = float(1)
+>>> y = float(2.8)
+>>> z = float("3")
+>>> w = float("4.2")
+>>> print(x)
+1.0
+>>> print(y)
+2.8
+>>> print(z)
+3.0
+>>> print(w)
+4.2
+>>> x = str("s1")
+>>> y = str(2)
+>>> z = str(3.0)
+>>> print(x)
+s1
+>>> print(y)
+2
+>>> print(z)
+3.0
+>>>
+
+
+
+Python Strings
+>>> #You can use double or single quotes:
+>>> print("Hello")
+Hello
+>>> print('Hello')
+Hello
+>>> a = "Hello"
+>>> print(a)
+Hello
+>>> a = """Lorem ipsum dolor sit amet,
+... consectetur adipiscing elit,
+... sed do eiusmod tempor incididunt
+... ut labore et dolore magna aliqua."""
+>>> print(a)
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+>>> a = '''Lorem ipsum dolor sit amet,
+... consectetur adipiscing elit,
+... sed do eiusmod tempor incididunt
+... ut labore et dolore magna aliqua.'''
+>>> print(a)
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+>>> a = "Hello, World!"
+>>> print(a[1])
+e
+>>> for x in "banana":
+...   print(x)
+...
+b
+a
+n
+a
+n
+a
+>>> a = "Hello, World!"
+>>> print(len(a))
+13
+>>> txt = "The best things in life are free!"
+>>> print("free" in txt)
+True
+>>> txt = "The best things in life are free!"
+>>> if "free" in txt:
+...   print("Yes, 'free' is present.")
+...
+Yes, 'free' is present.
+>>> txt = "The best things in life are free!"
+>>> print("expensive" not in txt)
+True
+>>> txt = "The best things in life are free!"
+>>> if "expensive" not in txt:
+...   print("No, 'expensive' is NOT present.")
+...
+No, 'expensive' is NOT present.
+>>>
+
+Python - Slicing Strings
+>>> a = "Hello, World!"
+>>> print(len(a))
+13
+>>> txt = "The best things in life are free!"
+>>> print("free" in txt)
+True
+>>> txt = "The best things in life are free!"
+>>> if "free" in txt:
+...   print("Yes, 'free' is present.")
+...
+Yes, 'free' is present.
+>>> txt = "The best things in life are free!"
+>>> print("expensive" not in txt)
+True
+>>> txt = "The best things in life are free!"
+>>> if "expensive" not in txt:
+...   print("No, 'expensive' is NOT present.")
+...
+No, 'expensive' is NOT present.
+>>> b = "Hello, World!"
+>>> print(b[2:5])
+llo
+>>> b = "Hello, World!"
+>>> print(b[:5])
+Hello
+>>> b = "Hello, World!"
+>>> print(b[2:])
+llo, World!
+>>> b = "Hello, World!"
+>>> print(b[-5:-2])
+orl
+
+Python - Modify Strings
+>>> b = "Hello, World!"
+>>> print(b[2:5])
+llo
+>>> b = "Hello, World!"
+>>> print(b[:5])
+Hello
+>>> b = "Hello, World!"
+>>> print(b[2:])
+llo, World!
+>>> b = "Hello, World!"
+>>> print(b[-5:-2])
+orl
+>>> a = "Hello, World!"
+>>> print(a.upper())
+HELLO, WORLD!
+>>> a = " Hello, World! "
+>>> print(a.strip())
+Hello, World!
+>>> a = "Hello, World!"
+>>> print(a.replace("H", "J"))
+Jello, World!
+>>> a = "Hello, World!"
+>>> b = a.split(",")
+>>> print(b)
+['Hello', ' World!']
+>>>
+
+Python - String Concatenation
+>>> a = "Hello"
+>>> b = "World"
+>>> c = a + b
+>>> print(c)
+HelloWorld
+>>> a = "Hello"
+>>> b = "World"
+>>> c = a + " " + b
+>>> print(c)
+Hello World
+>>>
+
+Python - Format - Strings
+> age = 36
+>>> txt = "My name is John, I am " + age
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print(txt)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'txt' is not defined
+>>> age = 36
+>>> txt = "My name is John, and I am {}"
+>>> print(txt.format(age))
+My name is John, and I am 36
+>>> quantity = 3
+>>> itemno = 567
+>>> price = 49.95
+>>> myorder = "I want {} pieces of item {} for {} dollars."
+>>> print(myorder.format(quantity, itemno, price))
+I want 3 pieces of item 567 for 49.95 dollars.
+>>> quantity = 3
+>>> itemno = 567
+>>> price = 49.95
+>>> myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+>>> print(myorder.format(quantity, itemno, price))
+I want to pay 49.95 dollars for 3 pieces of item 567.
+
+Python - Escape Characters
+
+> txt = "We are the so-called "Vikings" from the north."
+  File "<stdin>", line 1
+    txt = "We are the so-called "Vikings" from the north."
+                                 ^^^^^^^
+SyntaxError: invalid syntax
+>>> #You will get an error if you use double quotes inside a string that are surrounded by double quotes:
+>>> txt = "We are the so-called \"Vikings\" from the north."
+>>> print(txt)
+We are the so-called "Vikings" from the north.
+>>> txt = 'It\'s alright.'
+>>> print(txt)
+It's alright.
+>>> txt = "This will insert one \\ (backslash)."
+>>> print(txt)
+This will insert one \ (backslash).
+>>> txt = "Hello\nWorld!"
+>>> print(txt)
+Hello
+World!
+>>> txt = "Hello\rWorld!"
+>>> print(txt)
+World!
+>>> txt = "Hello\tWorld!"
+>>> print(txt)
+Hello   World!
+>>> #This example erases one character (backspace):
+>>> txt = "Hello \bWorld!"
+>>> print(txt)
+HelloWorld!
+>>> #A backslash followed by three integers will result in a octal value:
+>>> txt = "\110\145\154\154\157"
+>>> print(txt)
+Hello
+>>> #A backslash followed by an 'x' and a hex number represents a hex value:
+>>> txt = "\x48\x65\x6c\x6c\x6f"
+>>> print(txt)
+Hello
+>>>
+
+Python - String Methods
+>>> txt = "hello, and welcome to my world."
+>>> x = txt.capitalize()
+>>> print (x)
+Hello, and welcome to my world.
+>>>
+>>> txt = "python is FUN!"
+>>> x = txt.capitalize()
+>>> print (x)
+Python is fun!
+>>> txt = "36 is my age."
+>>> x = txt.capitalize()
+>>> print (x)
+36 is my age.
+>>> txt = "Hello, And Welcome To My World!"
+>>> x = txt.casefold()
+>>> print(x)
+hello, and welcome to my world!
+>>> txt = "banana"
+>>>
+>>> x = txt.center(20)
+>>>
+>>> print(x)
+       banana
+>>> txt = "banana"
+>>> x = txt.center(20, "O")
+>>> print(x)
+OOOOOOObananaOOOOOOO
+>>> txt = "I love apples, apple are my favorite fruit"
+>>> x = txt.count("apple")
+>>> print(x)
+2
+>>> txt = "I love apples, apple are my favorite fruit"
+>>> x = txt.count("apple", 10, 24)
+>>> print(x)
+1
+>>> txt = "My name is Ståle"
+>>> x = txt.encode()
+>>> print(x)
+b'My name is St\xc3\xa5le'
+>>> txt = "My name is Ståle"
+>>> print(txt.encode(encoding="ascii",errors="backslashreplace"))
+b'My name is St\\xe5le'
+>>> print(txt.encode(encoding="ascii",errors="ignore"))
+b'My name is Stle'
+>>> print(txt.encode(encoding="ascii",errors="namereplace"))
+b'My name is St\\N{LATIN SMALL LETTER A WITH RING ABOVE}le'
+>>> print(txt.encode(encoding="ascii",errors="replace"))
+b'My name is St?le'
+>>> print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))
+b'My name is St&#229;le'
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.endswith(".")
+>>> print(x)
+True
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.endswith("my world.")
+>>> print(x)
+True
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.endswith("my world.")
+>>> print(x)
+True
+>>>
+>>> txt = "H\te\tl\tl\to"
+>>> x =  txt.expandtabs(2)
+>>> print(x)
+H e l l o
+>>> txt = "H\te\tl\tl\to"
+>>> print(txt)
+H       e       l       l       o
+>>> print(txt.expandtabs())
+H       e       l       l       o
+>>> print(txt.expandtabs(2))
+H e l l o
+>>> print(txt.expandtabs(4))
+H   e   l   l   o
+>>> print(txt.expandtabs(10))
+H         e         l         l         o
+>>>  txt = "H\te\tl\tl\to"
+  File "<stdin>", line 1
+    txt = "H\te\tl\tl\to"
+IndentationError: unexpected indent
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.find("welcome")
+>>> print(x)
+7
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.find("e")
+>>> print(x)
+1
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.find("e", 5, 10)
+>>> print(x)
+8
+>>> txt = "Hello, welcome to my world."
+>>> print(txt.find("q"))
+-1
+>>> print(txt.index("q"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> txt = "For only {price:.2f} dollars!"
+>>> print(txt.format(price = 49))
+For only 49.00 dollars!
+>>> #named indexes:
+>>> txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+>>> #numbered indexes:
+>>> txt2 = "My name is {0}, I'm {1}".format("John",36)
+>>> #empty placeholders:
+>>> txt3 = "My name is {}, I'm {}".format("John",36)
+>>> print(txt1)
+My name is John, I'm 36
+>>> print(txt2)
+My name is John, I'm 36
+>>> print(txt3)
+My name is John, I'm 36
+>>> #To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+>>> #Use "<" to left-align the value:
+>>> txt = "We have {:<8} chickens."
+>>> print(txt.format(49))
+We have 49       chickens.
+>>> #To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+>>> #Use ">" to right-align the value:
+>>> txt = "We have {:>8} chickens."
+>>> print(txt.format(49))
+We have       49 chickens.
+>>> #To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+>>> #Use "^" to center-align the value:
+>>> txt = "We have {:^8} chickens."
+>>> print(txt.format(49))
+We have    49    chickens.
+>>> #Use "-" to always indicate if the number is negative (positive numbers are displayed without any sign):
+>>> txt = "The temperature is between {:-} and {:-} degrees celsius."
+>>> print(txt.format(-3, 7))
+The temperature is between -3 and 7 degrees celsius.
+>>> #Use "-" to always indicate if the number is negative (positive numbers are displayed without any sign):
+>>> txt = "The temperature is between {:-} and {:-} degrees celsius."
+>>> print(txt.format(-3, 7))
+The temperature is between -3 and 7 degrees celsius.
+>>> #Use " " (a space) to insert a space before positive numbers and a minus sign before negative numbers:
+>>> txt = "The temperature is between {: } and {: } degrees celsius."
+>>> print(txt.format(-3, 7))
+The temperature is between -3 and  7 degrees celsius.
+>>> #Use "," to add a comma as a thousand separator:
+>>> txt = "The universe is {:,} years old."
+>>> print(txt.format(13800000000))
+The universe is 13,800,000,000 years old.
+>>> #Use "d" to convert a number, in this case a binary number, into decimal number format:
+>>> txt = "We have {:d} chickens."
+>>> print(txt.format(0b101))
+We have 5 chickens.
+>>> #Use "e" to convert a number into scientific number format (with a lower-case e):
+>>> txt = "We have {:e} chickens."
+>>> print(txt.format(5))
+We have 5.000000e+00 chickens.
+>>> #Use "E" to convert a number into scientific number format (with an upper-case E):
+>>> txt = "We have {:E} chickens."
+>>> print(txt.format(5))
+We have 5.000000E+00 chickens.
+>>> #Use "f" to convert a number into a fixed point number, default with 6 decimals, but use a period followed by a number to specify the number of decimals:
+>>> txt = "The price is {:.2f} dollars."
+>>> print(txt.format(45))
+The price is 45.00 dollars.
+>>> #without the ".2" inside the placeholder, this number will be displayed like this:
+>>> txt = "The price is {:f} dollars."
+>>> print(txt.format(45))
+The price is 45.000000 dollars.
+>>> #Use "F" to convert a number into a fixed point number, but display inf and nan as INF and NAN:
+>>> x = float('inf')
+>>> txt = "The price is {:F} dollars."
+>>> print(txt.format(x))
+The price is INF dollars.
+>>> #same example, but with a lower case f:
+>>> txt = "The price is {:f} dollars."
+>>> print(txt.format(x))
+The price is inf dollars.
+>>> #Use "o" to convert the number into octal format:
+>>> txt = "The octal version of {0} is {0:o}"
+>>> print(txt.format(10))
+The octal version of 10 is 12
+>>> #Use "x" to convert the number into Hex format:
+>>> txt = "The Hexadecimal version of {0} is {0:x}"
+>>> print(txt.format(255))
+The Hexadecimal version of 255 is ff
+>>> #Use "X" to convert the number into upper-case Hex format:
+>>> txt = "The Hexadecimal version of {0} is {0:X}"
+>>> print(txt.format(255))
+The Hexadecimal version of 255 is FF
+>>> #Use "%" to convert the number into a percentage format:
+>>> txt = "You scored {:%}"
+>>> print(txt.format(0.25))
+You scored 25.000000%
+>>> #Or, without any decimals:
+>>> txt = "You scored {:.0%}"
+>>> print(txt.format(0.25))
+You scored 25%
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.index("e")
+>>> print(x)
+1
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.index("e", 5, 10)
+>>> print(x)
+8
+>>> txt = "Hello, welcome to my world."
+>>> print(txt.find("q"))
+-1
+>>> print(txt.index("q"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.index("welcome")
+>>> print(x)
+7
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.index("e")
+>>> print(x)
+1
+>>> txt = "Hello, welcome to my world."
+>>> x = txt.index("e", 5, 10)
+>>> print(x)
+8
+>>> txt = "Hello, welcome to my world."
+>>> print(txt.find("q"))
+-1
+>>> print(txt.index("q"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> txt = "Company12"
+>>> x = txt.isalnum()
+>>> print(x)
+True
+>>> txt = "Company 12"
+>>> x = txt.isalnum()
+>>> print(x)
+False
+>>> txt = "CompanyX"
+>>> x = txt.isalpha()
+>>> print(x)
+True
+>>> txt = "Company10"
+>>> x = txt.isalpha()
+>>> print(x)
+False
+>>> txt = "Company123"
+>>> x = txt.isascii()
+>>> print(x)
+True
+>>> txt = "\u0033" #unicode for 3
+>>> x = txt.isdecimal()
+>>> print(x)
+True
+>>> a = "\u0030" #unicode for 0
+>>> b = "\u0047" #unicode for G
+>>> print(a.isdecimal())
+True
+>>> print(b.isdecimal())
+False
+>>> txt = "50800"
+>>> x = txt.isdigit()
+>>> print(x)
+True
+>>>
+KeyboardInterrupt
+>>> a = "\u0030" #unicode for 0
+>>> b = "\u00B2" #unicode for ²
+>>> print(a.isdigit())
+True
+>>> print(b.isdigit())
+True
+>>> txt = "apple, banana, cherry"
+>>> x = txt.rsplit(", ")
+>>> print(x)
+['apple', 'banana', 'cherry']
+>>> txt = "apple, banana, cherry"
+>>> # setting the maxsplit parameter to 1, will return a list with 2 elements!
+>>> x = txt.rsplit(", ", 1)
+>>> print(x)
+['apple, banana', 'cherry']
+>>> # note that the result has only 2 elements "apple, banana" is the first element, and "cherry" is the last.
+>>> txt = "50"
+>>> x = txt.zfill(10)
+>>> print(x)
+0000000050
+>>> a = "hello"
+>>> b = "welcome to the jungle"
+>>> c = "10.000"
+>>> print(a.zfill(10))
+00000hello
+>>> print(b.zfill(10))
+welcome to the jungle
+>>> print(c.zfill(10))
+000010.000
+>>> #use a dictionary with ascii codes to replace 83 (S) with 80 (P):
+>>> mydict = {83:  80}
+>>> txt = "Hello Sam!"
+>>> print(txt.translate(mydict))
+Hello Pam!
+>>> txt = "Hello Sam!"
+>>> mytable = txt.maketrans("S", "P")
+>>> print(txt.translate(mytable))
+Hello Pam!
+>>> txt = "Good night Sam!"
+>>> x = "mSa"
+>>> y = "eJo"
+>>> z = "odnght"
+>>> mytable = txt.maketrans(x, y, z)
+>>> print(txt.translate(mytable))
+G i Joe!
+>>> txt = "Good night Sam!"
+>>> mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+>>> print(txt.translate(mydict))
+G i Joe!
+>>> txt = "Thank you for the music\nWelcome to the jungle"
+>>> x = txt.splitlines()
+>>> print(x)
+['Thank you for the music', 'Welcome to the jungle']
+>>> txt = "Thank you for the music\nWelcome to the jungle"
+>>> x = txt.splitlines(True)
+>>> print(x)
+['Thank you for the music\n', 'Welcome to the jungle']
+>>> txt = "565543"
+>>> x = txt.isnumeric()
+>>> print(x)
+True
+>>> a = "\u0030" #unicode for 0
+>>> b = "\u00B2" #unicode for ²
+>>> c = "10km2"
+>>> d = "-1"
+>>> e = "1.5"
+>>> print(a.isnumeric())
+True
+>>> print(b.isnumeric())
+True
+>>> print(c.isnumeric())
+False
+>>> print(d.isnumeric())
+False
+>>> print(e.isnumeric())
+False
+>>> txt = "Hello, And Welcome To My World!"
+>>> x = txt.istitle()
+>>> print(x)
+True
+>>> a = "HELLO, AND WELCOME TO MY WORLD"
+>>> b = "Hello"
+>>> c = "22 Names"
+>>> d = "This Is %'!?"
+>>> print(a.istitle())
+False
+>>> print(b.istitle())
+True
+>>> print(c.istitle())
+True
+>>> print(d.istitle())
+True
+>>>
+
+Python Booleans
+>>> print(10 > 9)
+True
+>>> print(10 == 9)
+False
+>>> print(10 < 9)
+False
+>>> a = 200
+>>> b = 33
+>>> if b > a:
+...   print("b is greater than a")
+... else:
+...   print("b is not greater than a")
+...
+b is not greater than a
+>>> print(bool("Hello"))
+True
+>>> print(bool(15))
+True
+>>> x = "Hello"
+>>> y = 15
+>>> print(bool(x))
+True
+>>> print(bool(y))
+True
+>>> print(bool("abc"))
+True
+>>> print(bool(123))
+True
+>>> print(bool(["apple", "cherry", "banana"]))
+True
+>>> print(bool(False))
+False
+>>> print(bool(None))
+False
+>>> print(bool(0))
+False
+>>> print(bool(""))
+False
+>>> print(bool(()))
+False
+>>> print(bool([]))
+False
+>>> print(bool({}))
+False
+>>> class myclass():
+...   def __len__(self):
+...     return 0
+... myobj = myclass()
+  File "<stdin>", line 4
+    myobj = myclass()
+    ^^^^^
+SyntaxError: invalid syntax
+>>> print(bool(myobj))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myobj' is not defined
+>>> def myFunction() :
+...   return True
+... print(myFunction())
+  File "<stdin>", line 3
+    print(myFunction())
+    ^^^^^
+SyntaxError: invalid syntax
+>>> def myFunction() :
+...   return True
+... if myFunction():
+  File "<stdin>", line 3
+    if myFunction():
+    ^^
+SyntaxError: invalid syntax
+>>>   print("YES!")
+  File "<stdin>", line 1
+    print("YES!")
+IndentationError: unexpected indent
+>>> else:
+  File "<stdin>", line 1
+    else:
+    ^^^^
+SyntaxError: invalid syntax
+>>>   print("NO!")
+  File "<stdin>", line 1
+    print("NO!")
+IndentationError: unexpected indent
+>>> x = 200
+>>> print(isinstance(x, int))
+True
+>>>
+
+Python Operators
+>>> print(10 > 9)
+True
+>>> print(10 == 9)
+False
+>>> print(10 < 9)
+False
+>>> a = 200
+>>> b = 33
+>>> if b > a:
+...   print("b is greater than a")
+... else:
+...   print("b is not greater than a")
+...
+b is not greater than a
+>>> print(bool("Hello"))
+True
+>>> print(bool(15))
+True
+>>> x = "Hello"
+>>> y = 15
+>>> print(bool(x))
+True
+>>> print(bool(y))
+True
+>>> print(bool("abc"))
+True
+>>> print(bool(123))
+True
+>>> print(bool(["apple", "cherry", "banana"]))
+True
+>>> print(bool(False))
+False
+>>> print(bool(None))
+False
+>>> print(bool(0))
+False
+>>> print(bool(""))
+False
+>>> print(bool(()))
+False
+>>> print(bool([]))
+False
+>>> print(bool({}))
+False
+>>> class myclass():
+...   def __len__(self):
+...     return 0
+... myobj = myclass()
+  File "<stdin>", line 4
+    myobj = myclass()
+    ^^^^^
+SyntaxError: invalid syntax
+>>> print(bool(myobj))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myobj' is not defined
+>>> def myFunction() :
+...   return True
+... print(myFunction())
+  File "<stdin>", line 3
+    print(myFunction())
+    ^^^^^
+SyntaxError: invalid syntax
+>>> def myFunction() :
+...   return True
+... if myFunction():
+  File "<stdin>", line 3
+    if myFunction():
+    ^^
+SyntaxError: invalid syntax
+>>>   print("YES!")
+  File "<stdin>", line 1
+    print("YES!")
+IndentationError: unexpected indent
+>>> else:
+  File "<stdin>", line 1
+    else:
+    ^^^^
+SyntaxError: invalid syntax
+>>>   print("NO!")
+  File "<stdin>", line 1
+    print("NO!")
+IndentationError: unexpected indent
+>>> x = 200
+>>> print(isinstance(x, int))
+True
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> Python Operators
+  File "<stdin>", line 1
+    Python Operators
+           ^^^^^^^^^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> print(10 + 5)
+15
+>>> print(10 + 5)
+15
+>>> x = 5
+>>> y = 3
+>>> print(x - y)
+2
+>>> x = 5
+>>> y = 3
+>>> print(x * y)
+15
+>>> x = 5
+>>> y = 3
+>>> print(x / y)
+1.6666666666666667
+>>> x = 5
+>>> y = 3
+>>> print(x % y)
+2
+>>> x = 5
+>>> y = 3
+>>> print(x ** y)
+125
+>>> x = 5
+>>> y = 3
+>>> print(x // y)
+1
+>>> x = 5
+>>> y = 3
+>>> print(x // y)
+1
+>>> x = 5
+>>> x += 3
+>>> print(x)
+8
+>>> x = 5
+>>> x += 3
+>>> print(x)
+8
+>>> x = 5
+>>> x /= 3
+>>> print(x)
+1.6666666666666667
+>>> x = 5
+>>> x%=3
+>>> print(x)
+2
+>>> x = 5
+>>> x//=3
+>>> print(x)
+1
+>>> x = 5
+>>> x **= 3
+>>> print(x)
+125
+>>> x = 5
+>>> x &= 3
+>>> print(x)
+1
+>>> x = 5
+>>> x |= 3
+>>> print(x)
+7
+>>> x = 5
+>>> x ^= 3
+>>> print(x)
+6
+>>> x = 5
+>>> x >>= 3
+>>> print(x)
+0
+>>> x = 5
+>>> x <<= 3
+>>> print(x)
+40
+>>> x = 5
+>>> y = 3
+>>> print(x == y)
+False
+>>> # returns False because 5 is not equal to 3
+>>> x = 5
+>>> y = 3
+>>> print(x != y)
+True
+>>> # returns True because 5 is not equal to 3
+>>> x = 5
+>>> y = 3
+>>> print(x > y)
+True
+>>> # returns True because 5 is greater than 3
+>>> x = 5
+>>> y = 3
+>>> print(x < y)
+False
+>>> # returns False because 5 is not less than 3
+>>> x = 5
+>>> y = 3
+>>> print(x >= y)
+True
+>>> # returns True because five is greater, or equal, to 3
+>>> x = 5
+>>> y = 3
+>>> print(x <= y)
+False
+>>> # returns False because 5 is neither less than or equal to 3
+>>> x = 5
+>>> print(x > 3 and x < 10)
+True
+>>> # returns True because 5 is greater than 3 AND 5 is less than 10
+>>> x = 5
+>>> print(x > 3 or x < 4)
+True
+>>> # returns True because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+>>> x = 5
+>>> print(not(x > 3 and x < 10))
+False
+>>> # returns False because not is used to reverse the result
+>>> x = ["apple", "banana"]
+>>> y = ["apple", "banana"]
+>>> z = x
+>>> print(x is z)
+True
+>>> # returns True because z is the same object as x
+>>> print(x is y)
+False
+>>> # returns False because x is not the same object as y, even if they have the same content
+>>> print(x == y)
+True
+>>> # to demonstrate the difference betweeen "is" and "==": this comparison returns True because x is equal to y
+>>> x = ["apple", "banana"]
+>>> print("banana" in x)
+True
+>>> # returns True because a sequence with the value "banana" is in the list
+>>> x = ["apple", "banana"]
+>>> print("pineapple" not in x)
+True
+>>> # returns True because a sequence with the value "pineapple" is not in the list
+>>>
+
+
+
+Python Lists
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>> thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+>>> print(thislist)
+['apple', 'banana', 'cherry', 'apple', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(len(thislist))
+3
+>>> list1 = ["apple", "banana", "cherry"]
+>>> list2 = [1, 5, 7, 9, 3]
+>>> list3 = [True, False, False]
+>>> print(list1)
+['apple', 'banana', 'cherry']
+>>> print(list2)
+[1, 5, 7, 9, 3]
+>>> print(list3)
+[True, False, False]
+>>> list1 = ["abc", 34, True, 40, "male"]
+>>> print(list1)
+['abc', 34, True, 40, 'male']
+>>> mylist = ["apple", "banana", "cherry"]
+>>> print(type(mylist))
+<class 'list'>
+>>> thislist = list(("apple", "banana", "cherry"))
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>>
+
+
+Python - Access List Items
+
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist[1])
+banana
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist[-1])
+cherry
+>>> thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+>>> print(thislist[2:5])
+['cherry', 'orange', 'kiwi']
+>>> #This will return the items from position 2 to 5.
+>>> #Remember that the first item is position 0,
+>>> #and note that the item in position 5 is NOT included
+>>> thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+>>> print(thislist[:4])
+['apple', 'banana', 'cherry', 'orange']
+>>> #This will return the items from index 0 to index 4.
+>>> #Remember that index 0 is the first item, and index 4 is the fifth item
+>>> #Remember that the item in index 4 is NOT included
+>>> thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+>>> print(thislist[2:])
+['cherry', 'orange', 'kiwi', 'melon', 'mango']
+>>> #This will return the items from index 2 to the end.
+>>> #Remember that index 0 is the first item, and index 2 is the third
+>>> thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+>>> print(thislist[-4:-1])
+['orange', 'kiwi', 'melon']
+>>> #Negative indexing means starting from the end of the list.
+>>> #This example returns the items from index -4 (included) to index -1 (excluded)
+>>> #Remember that the last item has the index -1,
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> if "apple" in thislist:
+...   print("Yes, 'apple' is in the fruits list")
+...
+Yes, 'apple' is in the fruits list
+>>>
+
+
+Python - Change List Items
+
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist[1] = "blackcurrant"
+>>> print(thislist)
+['apple', 'blackcurrant', 'cherry']
+>>> thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+>>> thislist[1:3] = ["blackcurrant", "watermelon"]
+>>> print(thislist)
+['apple', 'blackcurrant', 'watermelon', 'orange', 'kiwi', 'mango']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist[1:2] = ["blackcurrant", "watermelon"]
+>>> print(thislist)
+['apple', 'blackcurrant', 'watermelon', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist[1:3] = ["watermelon"]
+>>> print(thislist)
+['apple', 'watermelon']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.insert(2, "watermelon")
+>>> print(thislist)
+['apple', 'banana', 'watermelon', 'cherry']
+>>>
+
+
+Python - Add List Items
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.append("orange")
+>>> print(thislist)
+['apple', 'banana', 'cherry', 'orange']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.insert(1, "orange")
+>>> print(thislist)
+['apple', 'orange', 'banana', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> tropical = ["mango", "pineapple", "papaya"]
+>>> thislist.extend(tropical)
+>>> print(thislist)
+['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thistuple = ("kiwi", "orange")
+>>> thislist.extend(thistuple)
+>>> print(thislist)
+['apple', 'banana', 'cherry', 'kiwi', 'orange']
+>>>
+
+Python - Remove List Items
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.remove("banana")
+>>> print(thislist)
+['apple', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.pop(1)
+'banana'
+>>> print(thislist)
+['apple', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> del thislist[0]
+>>> print(thislist)
+['banana', 'cherry']
+>>> thislist = ["apple", "banana", "cherry"]
+>>> del thislist
+>>> print(thislist) #this will cause an error because you have succsesfully deleted "thislist".
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'thislist' is not defined
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.clear()
+>>> print(thislist)
+[]
+>>>
+
+Python - Loop Lists
+>>> thislist = ["apple", "banana", "cherry"]
+>>> for x in thislist:
+...   print(x)
+...
+apple
+banana
+cherry
+>>> thislist = ["apple", "banana", "cherry"]
+>>> for i in range(len(thislist)):
+...   print(thislist[i])
+...
+apple
+banana
+cherry
+>>> thislist = ["apple", "banana", "cherry"]
+>>> i = 0
+>>> while i < len(thislist):
+...   print(thislist[i])
+...   i = i + 1
+...
+apple
+banana
+cherry
+>>> thislist = ["apple", "banana", "cherry"]
+>>> [print(x) for x in thislist]
+apple
+banana
+cherry
+[None, None, None]
+>>>
+
+Python - List Comprehension
+>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = []
+>>> for x in fruits:
+...   if "a" in x:
+...     newlist.append(x)
+... print(newlist)
+  File "<stdin>", line 4
+    print(newlist)
+    ^^^^^
+SyntaxError: invalid syntax
+>>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = [x for x in fruits if "a" in x]
+>>> print(newlist)
+['apple', 'banana', 'mango']
+>>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = [x for x in fruits if "a" in x]
+>>> print(newlist)
+['apple', 'banana', 'mango']
+>>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = [x for x in fruits]
+>>> print(newlist)
+['apple', 'banana', 'cherry', 'kiwi', 'mango']
+>>> newlist = [x for x in range(10)]
+>>> print(newlist)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> newlist = [x for x in range(10) if x < 5]
+>>> print(newlist)
+[0, 1, 2, 3, 4]
+>>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = ['hello' for x in fruits]
+>>> print(newlist)
+['hello', 'hello', 'hello', 'hello', 'hello']
+>>> fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+>>> newlist = [x if x != "banana" else "orange" for x in fruits]
+>>> print(newlist)
+['apple', 'orange', 'cherry', 'kiwi', 'mango']
+>>>
+
+
+Python - Sort Lists
+
+>>> thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+>>> thislist.sort()
+>>> print(thislist)
+['banana', 'kiwi', 'mango', 'orange', 'pineapple']
+>>> thislist = [100, 50, 65, 82, 23]
+>>> thislist.sort()
+>>> print(thislist)
+[23, 50, 65, 82, 100]
+>>> thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+>>> thislist.sort(reverse = True)
+>>> print(thislist)
+['pineapple', 'orange', 'mango', 'kiwi', 'banana']
+>>> def myfunc(n):
+...   return abs(n - 50)
+... thislist = [100, 50, 65, 82, 23]
+  File "<stdin>", line 3
+    thislist = [100, 50, 65, 82, 23]
+    ^^^^^^^^
+SyntaxError: invalid syntax
+>>> thislist.sort(key = myfunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myfunc' is not defined
+>>> print(thislist)
+['pineapple', 'orange', 'mango', 'kiwi', 'banana']
+>>> thislist = ["banana", "Orange", "Kiwi", "cherry"]
+>>> thislist.sort()
+>>> print(thislist)
+['Kiwi', 'Orange', 'banana', 'cherry']
+>>> thislist = ["banana", "Orange", "Kiwi", "cherry"]
+>>> thislist.sort()
+>>> print(thislist)
+['Kiwi', 'Orange', 'banana', 'cherry']
+>>> thislist = ["banana", "Orange", "Kiwi", "cherry"]
+>>> thislist.reverse()
+>>> print(thislist)
+['cherry', 'Kiwi', 'Orange', 'banana']
+>>>
+
+Python - Copy Lists
+
+>>> thislist = ["apple", "banana", "cherry"]
+>>> mylist = thislist.copy()
+>>> print(mylist)
+['apple', 'banana', 'cherry']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> mylist = list(thislist)
+>>> print(mylist)
+['apple', 'banana', 'cherry']
+>>>
+
+Python - Join Lists
+>>> list1 = ["a", "b", "c"]
+>>> list2 = [1, 2, 3]
+>>> list3 = list1 + list2
+>>> print(list3)
+['a', 'b', 'c', 1, 2, 3]
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> for x in list2:
+...   list1.append(x)
+... print(list1)
+  File "<stdin>", line 3
+    print(list1)
+    ^^^^^
+SyntaxError: invalid syntax
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> list1.extend(list2)
+>>> print(list1)
+['a', 'b', 'c', 1, 2, 3]
+>>>
+
+Python - List Methods
+
+>>> list1 = ["a", "b", "c"]
+>>> list2 = [1, 2, 3]
+>>> list3 = list1 + list2
+>>> print(list3)
+['a', 'b', 'c', 1, 2, 3]
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> for x in list2:
+...   list1.append(x)
+... print(list1)
+  File "<stdin>", line 3
+    print(list1)
+    ^^^^^
+SyntaxError: invalid syntax
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> list1.extend(list2)
+>>> print(list1)
+['a', 'b', 'c', 1, 2, 3]
+>>
+>>> fruits = ["apple", "banana", "cherry"]
+>>> fruits.append("orange")
+>>> print(fruits)
+['apple', 'banana', 'cherry', 'orange']
+>>> a = ["apple", "banana", "cherry"]
+>>> b = ["Ford", "BMW", "Volvo"]
+>>> a.append(b)
+>>> print(a)
+['apple', 'banana', 'cherry', ['Ford', 'BMW', 'Volvo']]
+>>> fruits = ["apple", "banana", "cherry"]
+>>> fruits.clear()
+>>> print(fruits)
+[]
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.copy()
+>>> print(x)
+['apple', 'banana', 'cherry']
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.count("cherry")
+>>> print(x)
+1
+>>> fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+>>> x = fruits.count(9)
+>>> print(x)
+2
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> cars = ['Ford', 'BMW', 'Volvo']
+>>> fruits.extend(cars)
+>>> print(fruits)
+['apple', 'banana', 'cherry', 'Ford', 'BMW', 'Volvo']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> points = (1, 4, 5, 9)
+>>> fruits.extend(points)
+>>> print(fruits)
+['apple', 'banana', 'cherry', 1, 4, 5, 9]
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> x = fruits.index("cherry")
+>>> print(x)
+2
+>>> fruits = [4, 55, 64, 32, 16, 32]
+>>> x = fruits.index(32)
+>>> print(x)
+3
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.insert(1, "orange")
+>>> print(fruits)
+['apple', 'orange', 'banana', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.pop(1)
+'banana'
+>>> print(fruits)
+['apple', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> x = fruits.pop(1)
+>>> print(x)
+banana
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.remove("banana")
+>>> print(fruits)
+['apple', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.reverse()
+>>> print(fruits)
+['cherry', 'banana', 'apple']
+>>> cars = ['Ford', 'BMW', 'Volvo']
+>>> cars.sort()
+>>> print(cars)
+['BMW', 'Ford', 'Volvo']
+>>> cars = ['Ford', 'BMW', 'Volvo']
+>>> cars.sort(reverse=True)
+>>> print(cars)
+['Volvo', 'Ford', 'BMW']
+>>> # A function that returns the length of the value:
+>>> def myFunc(e):
+...   return len(e)
+... cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+  File "<stdin>", line 3
+    cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+    ^^^^
+SyntaxError: invalid syntax
+>>> cars.sort(key=myFunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myFunc' is not defined
+>>> print(cars)
+['Volvo', 'Ford', 'BMW']
+>>> def myFunc(e):
+...   return e['year']
+... cars = [
+  File "<stdin>", line 3
+    cars = [
+    ^^^^
+SyntaxError: invalid syntax
+>>>   {'car': 'Ford', 'year': 2005},
+  File "<stdin>", line 1
+    {'car': 'Ford', 'year': 2005},
+IndentationError: unexpected indent
+>>>   {'car': 'Mitsubishi', 'year': 2000},
+  File "<stdin>", line 1
+    {'car': 'Mitsubishi', 'year': 2000},
+IndentationError: unexpected indent
+>>>   {'car': 'BMW', 'year': 2019},
+  File "<stdin>", line 1
+    {'car': 'BMW', 'year': 2019},
+IndentationError: unexpected indent
+>>>   {'car': 'VW', 'year': 2011}
+  File "<stdin>", line 1
+    {'car': 'VW', 'year': 2011}
+IndentationError: unexpected indent
+>>> ]
+  File "<stdin>", line 1
+    ]
+    ^
+SyntaxError: unmatched ']'
+>>> cars.sort(key=myFunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myFunc' is not defined
+>>> print(cars)
+['Volvo', 'Ford', 'BMW']
+>>> # A function that returns the length of the value:
+>>> def myFunc(e):
+...   return len(e)
+... cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+  File "<stdin>", line 3
+    cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+    ^^^^
+SyntaxError: invalid syntax
+>>> cars.sort(reverse=True, key=myFunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myFunc' is not defined
+>>> print(cars)
+['Volvo', 'Ford', 'BMW']
+>>>
+
+Python Tuples
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple)
+('apple', 'banana', 'cherry')
+>>> thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+>>> print(thistuple)
+('apple', 'banana', 'cherry', 'apple', 'cherry')
+>>> thistuple = tuple(("apple", "banana", "cherry"))
+>>> print(len(thistuple))
+3
+>>> thistuple = ("apple",)
+>>> print(type(thistuple))
+<class 'tuple'>
+>>> #NOT a tuple
+>>> thistuple = ("apple")
+>>> print(type(thistuple))
+<class 'str'>
+>>> tuple1 = ("apple", "banana", "cherry")
+>>> tuple2 = (1, 5, 7, 9, 3)
+>>> tuple3 = (True, False, False)
+>>> print(tuple1)
+('apple', 'banana', 'cherry')
+>>> print(tuple2)
+(1, 5, 7, 9, 3)
+>>> print(tuple3)
+(True, False, False)
+>>> tuple1 = ("abc", 34, True, 40, "male")
+>>> print(tuple1)
+('abc', 34, True, 40, 'male')
+>>> mytuple = ("apple", "banana", "cherry")
+>>> print(type(mytuple))
+<class 'tuple'>
+>>> thistuple = tuple(("apple", "banana", "cherry"))
+>>> print(thistuple)
+('apple', 'banana', 'cherry')
+>>>
+
+
+Python - Access Tuple Items
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple[1])
+banana
+>>> thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+>>> print(thistuple[2:])
+('cherry', 'orange', 'kiwi', 'melon', 'mango')
+>>> thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+>>> print(thistuple[2:])
+('cherry', 'orange', 'kiwi', 'melon', 'mango')
+>>> thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+>>> print(thistuple[-4:-1])
+('orange', 'kiwi', 'melon')
+>>> #Negative indexing means starting from the end of the tuple.
+>>> #This example returns the items from index -4 (included) to index -1 (excluded)
+>>> #Remember that the last item has the index -1,
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> if "apple" in thistuple:
+...   print("Yes, 'apple' is in the fruits tuple")
+...
+Yes, 'apple' is in the fruits tuple
+>>>
+Python - Update Tuples
+>>> x = ("apple", "banana", "cherry")
+>>> y = list(x)
+>>> y[1] = "kiwi"
+>>> x = tuple(y)
+>>> print(x)
+('apple', 'kiwi', 'cherry')
+>>> thistuple = ("apple", "banana", "cherry")
+>>> y = list(thistuple)
+>>> y.append("orange")
+>>> thistuple = tuple(y)
+>>> print(thistuple)
+('apple', 'banana', 'cherry', 'orange')
+>>> thistuple = ("apple", "banana", "cherry")
+>>> y = ("orange",)
+>>> thistuple += y
+>>> print(thistuple)
+('apple', 'banana', 'cherry', 'orange')
+>>> thistuple = ("apple", "banana", "cherry")
+>>> y = list(thistuple)
+>>> y.remove("apple")
+>>> thistuple = tuple(y)
+>>> print(thistuple)
+('banana', 'cherry')
+>>> thistuple = ("apple", "banana", "cherry")
+>>> del thistuple
+>>> print(thistuple) #this will raise an error because the tuple no longer exists
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'thistuple' is not defined
+>>>
+
+
+
+Python - Unpack Tuples
+>>> fruits = ("apple", "banana", "cherry")
+>>> print(fruits)
+('apple', 'banana', 'cherry')
+>>> fruits = ("apple", "banana", "cherry")
+>>> (green, yellow, red) = fruits
+>>> print(green)
+apple
+>>> print(yellow)
+banana
+>>> print(red)
+cherry
+>>> fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+>>> (green, yellow, *red) = fruits
+>>> print(green)
+apple
+>>> print(yellow)
+banana
+>>> print(red)
+['cherry', 'strawberry', 'raspberry']
+>>> fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+>>> (green, *tropic, red) = fruits
+>>> print(green)
+apple
+>>> print(tropic)
+['mango', 'papaya', 'pineapple']
+>>> print(red)
+cherry
+>>>
+
+Python - Loop Tuples
+>>> thistuple = ("apple", "banana", "cherry")
+>>> for x in thistuple:
+...   print(x)
+...
+apple
+banana
+cherry
+>>> thistuple = ("apple", "banana", "cherry")
+>>> for i in range(len(thistuple)):
+...   print(thistuple[i])
+...
+apple
+banana
+cherry
+>>> thistuple = ("apple", "banana", "cherry")
+>>> i = 0
+>>> while i < len(thistuple):
+...   print(thistuple[i])
+...   i = i + 1
+...
+apple
+banana
+cherry
+>>>
+
+
+Python - Join Tuples
+>> tuple1 = ("a", "b" , "c")
+>>> tuple2 = (1, 2, 3)
+>>> tuple3 = tuple1 + tuple2
+>>> print(tuple3)
+('a', 'b', 'c', 1, 2, 3)
+>>> fruits = ("apple", "banana", "cherry")
+>>> mytuple = fruits * 2
+>>> print(mytuple)
+('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')
+>>>
+
+Python - Tuple Methods
+
+>>> tuple1 = ("a", "b" , "c")
+>>> tuple2 = (1, 2, 3)
+>>> tuple3 = tuple1 + tuple2
+>>> print(tuple3)
+('a', 'b', 'c', 1, 2, 3)
+>>> fruits = ("apple", "banana", "cherry")
+>>> mytuple = fruits * 2
+>>> print(mytuple)
+('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')
+>>>
+>>>
+>>>
+>>> thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+>>> x = thistuple.count(5)
+>>> print(x)
+2
+>>> thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+>>> x = thistuple.index(8)
+>>> print(x)
+3
+>>> thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+>>> x = thistuple.index(8)
+>>> print(x)
+3
+>>>
+
+
+
+
+Python Set Methods
+
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.add("orange")
+>>> print(thisset)
+{'cherry', 'banana', 'orange', 'apple'}
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.add("apple")
+>>> print(thisset)
+{'cherry', 'banana', 'apple'}
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.clear()
+>>> print(thisset)
+set()
+>>>
+>>>
+>>>
+>>> fruits = {"apple", "banana", "cherry"}
+>>> x = fruits.copy()
+>>> print(x)
+{'cherry', 'banana', 'apple'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = x.difference(y)
+>>> print(z)
+{'cherry', 'banana'}
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = y.difference(x)
+>>> print(z)
+{'google', 'microsoft'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> x.difference_update(y)
+>>> print(x)
+{'cherry', 'banana'}
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.discard("banana")
+>>> print(thisset)
+{'cherry', 'apple'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = x.intersection(y)
+>>> print(z)
+{'apple'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = x.intersection(y)
+>>> print(z)
+{'apple'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> x.intersection_update(y)
+>>> print(x)
+{'apple'}
+>>>
+>>>
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "facebook"}
+>>> z = x.isdisjoint(y)
+>>> print(z)
+True
+>>>
+>>> x = {"a", "b", "c"}
+>>> y = {"f", "e", "d", "c", "b"}
+>>> z = x.issubset(y)
+>>> print(z)
+False
+>>>
+>>> x = {"f", "e", "d", "c", "b"}
+>>> y = {"a", "b", "c"}
+>>> z = x.issuperset(y)
+>>> print(z)
+False
+>>>
+>>> fruits = {"apple", "banana", "cherry"}
+>>> x = fruits.pop()
+>>> print(x)
+cherry
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = x.symmetric_difference(y)
+>>> print(z)
+{'cherry', 'microsoft', 'google', 'banana'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> x.symmetric_difference_update(y)
+>>> print(x)
+{'cherry', 'microsoft', 'google', 'banana'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> z = x.union(y)
+>>> print(z)
+{'google', 'banana', 'apple', 'cherry', 'microsoft'}
+>>>
+>>> x = {"apple", "banana", "cherry"}
+>>> y = {"google", "microsoft", "apple"}
+>>> x.update(y)
+>>> print(x)
+{'google', 'banana', 'apple', 'cherry', 'microsoft'}
+>>>
+
+
+
+Python Dictionaries
+
+
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> print(thisdict["brand"])
+Ford
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> print(type(thisdict))
+<class 'dict'>
+>>> car = {
+... "brand": "Ford",
+... "model": "Mustang",
+... "year": 1964
+... }
+>>> x = car.keys()
+>>> print(x) #before the change
+dict_keys(['brand', 'model', 'year'])
+>>> car["color"] = "white"
+>>> print(x) #after the change
+dict_keys(['brand', 'model', 'year', 'color'])
+>>> car = {
+... "brand": "Ford",
+... "model": "Mustang",
+... "year": 1964
+... }
+>>> x = car.values()
+>>> print(x) #before the change
+dict_values(['Ford', 'Mustang', 1964])
+>>> car["year"] = 2020
+>>> print(x) #after the change
+dict_values(['Ford', 'Mustang', 2020])
+>>> car = {
+... "brand": "Ford",
+... "model": "Mustang",
+... "year": 1964
+... }
+>>> x = car.items()
+>>> print(x) #before the change
+dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+>>> car["year"] = 2020
+>>> print(x) #after the change
+dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2020)])
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> if "model" in thisdict:
+...   print("Yes, 'model' is one of the keys in the thisdict dictionary")
+...
+Yes, 'model' is one of the keys in the thisdict dictionary
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict["year"] = 2018
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict.update({"year": 2020})
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict["color"] = "red"
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict.pop("model")
+'Mustang'
+>>> print(thisdict)
+{'brand': 'Ford', 'year': 1964}
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> del thisdict["model"]
+>>> print(thisdict)
+{'brand': 'Ford', 'year': 1964}
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict.clear()
+>>> print(thisdict)
+{}
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> for x in thisdict:
+...   print(x)
+...
+brand
+model
+year
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> for x in thisdict.values():
+...   print(x)
+...
+Ford
+Mustang
+1964
+>>> thisdict ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> for x, y in thisdict.items():
+...   print(x, y)
+...
+brand Ford
+model Mustang
+year 1964
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> mydict = thisdict.copy()
+>>> print(mydict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+>>> myfamily = {
+...   "child1" : {
+...     "name" : "Emil",
+...     "year" : 2004
+...   },
+...   "child2" : {
+...     "name" : "Tobias",
+...     "year" : 2007
+...   },
+...   "child3" : {
+...     "name" : "Linus",
+...     "year" : 2011
+...   }
+... }
+>>> print(myfamily)
+{'child1': {'name': 'Emil', 'year': 2004}, 'child2': {'name': 'Tobias', 'year': 2007}, 'child3': {'name': 'Linus', 'year': 2011}}
+>>> child1 = {
+...   "name" : "Emil",
+...   "year" : 2004
+... }
+>>> child2 = {
+...   "name" : "Tobias",
+...   "year" : 2007
+... }
+>>> child3 = {
+...   "name" : "Linus",
+...   "year" : 2011
+... }
+>>>
+>>> myfamily = {
+...   "child1" : child1,
+...   "child2" : child2,
+...   "child3" : child3
+... }
+>>> print(myfamily)
+{'child1': {'name': 'Emil', 'year': 2004}, 'child2': {'name': 'Tobias', 'year': 2007}, 'child3': {'name': 'Linus', 'year': 2011}}
+>>> car ={
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> car.clear()
+>>> print(car)
+{}
+>>> car = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> x = car.get("model")
+>>> print(x)
+Mustang
+>>> car = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> x = car.keys()
+>>> print(x)
+dict_keys(['brand', 'model', 'year'])
+>>> car = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> x = car.keys()
+>>> car["color"] = "white"
+>>> print(x)
+dict_keys(['brand', 'model', 'year', 'color'])
+>>> car = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> car.popitem()
+('year', 1964)
+>>> print(car)
+{'brand': 'Ford', 'model': 'Mustang'}
+>>> car = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> car.update({"color": "White"})
+>>> print(car)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}
+>>> thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+>>> x = thistuple.count(5)
+>>> print(x)
+2
+>>>
+
+
+Python If ... Else
+>>> a = 33
+>>> b = 200
+>>> if b > a:
+...   print("b is greater than a")
+...
+b is greater than a
+>>> a = 33
+>>> b = 33
+>>> if b > a:
+...   print("b is greater than a")
+... elif a == b:
+...   print("a and b are equal")
+...
+a and b are equal
+>>> a = 330
+>>> b = 330
+>>> print("A") if a > b else print("=") if a == b else print("B")
+=
+>>> a = 200
+>>> b = 33
+>>> c = 500
+>>> if a > b and c > a:
+...   print("Both conditions are True")
+...
+Both conditions are True
+>>> x = 41
+>>> if x > 10:
+...   print("Above ten,")
+...   if x > 20:
+...     print("and also above 20!")
+...   else:
+...     print("but not above 20.")
+...
+Above ten,
+and also above 20!
+>>> a = 33
+>>> b = 200
+>>> if b > a:
+...   pass
+... # having an empty if statement like this, would raise an error without the pass statement
+...
+
+Python While Loops
+>>> i = 1
+>>> while i < 6:
+...   print(i)
+...   i += 1
+...
+1
+2
+3
+4
+5
+>>> i = 0
+>>> while i < 6:
+...   i += 1
+...   if i == 3:
+...     continue
+...   print(i)
+... # Note that number 3 is missing in the result
+...
+1
+2
+4
+5
+6
+>>> i = 1
+>>> while i < 6:
+...   print(i)
+...   i += 1
+... else:
+...   print("i is no longer less than 6")
+...
+1
+2
+3
+4
+5
+i is no longer less than 6
+>>>
+
+Python For Loops
+>>> fruits = ["apple", "banana", "cherry"]
+>>> for x in fruits:
+...   print(x)
+...
+apple
+banana
+cherry
+>>> for x in "banana":
+...   print(x)
+...
+b
+a
+n
+a
+n
+a
+>>> fruits = ["apple", "banana", "cherry"]
+>>> for x in fruits:
+...   if x == "banana":
+...     break
+...   print(x)
+...
+apple
+>>> for x in range(2, 6):
+...   print(x)
+...
+2
+3
+4
+5
+>>> for x in range(6):
+...   print(x)
+... else:
+...   print("Finally finished!")
+...
+0
+1
+2
+3
+4
+5
+Finally finished!
+>>> adj = ["red", "big", "tasty"]
+>>> fruits = ["apple", "banana", "cherry"]
+>>>
+>>> for x in adj:
+...   for y in fruits:
+...     print(x, y)
+...
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+>>>
+
+Python Functions
+
+Python Lambda
+
+Python Arrays
+
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> print(cars)
+['Ford', 'Volvo', 'BMW']
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> x = cars[0]
+>>> print(x)
+Ford
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> cars[0] = "Toyota"
+>>> print(cars)
+['Toyota', 'Volvo', 'BMW']
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> x = len(cars)
+>>> print(x)
+3
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> for x in cars:
+...   print(x)
+...
+Ford
+Volvo
+BMW
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> cars.pop(1)
+'Volvo'
+>>> print(cars)
+['Ford', 'BMW']
+>>> cars = ["Ford", "Volvo", "BMW"]
+>>> cars.remove("Volvo")
+>>> print(cars)
+['Ford', 'BMW']
+>>> fruits = ["apple", "banana", "cherry"]
+>>> fruits.clear()
+>>> print(fruits)
+[]
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.count("cherry")
+>>> print(x)
+1
+>>> fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+>>> x = fruits.count(9)
+>>> print(x)
+2
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.count("cherry")
+>>> print(x)
+1
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.count("cherry")
+>>> print(x)
+1
+>>> fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+>>> x = fruits.count(9)
+>>> print(x)
+2
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> x = fruits.index("cherry")
+>>> print(x)
+2
+>>> fruits = [4, 55, 64, 32, 16, 32]
+>>> x = fruits.index(32)
+>>> print(x)
+3
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.pop(1)
+'banana'
+>>> print(fruits)
+['apple', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> x = fruits.pop(1)
+>>> print(x)
+banana
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.reverse()
+>>> print(fruits)
+['cherry', 'banana', 'apple']
+>>> cars = ['Ford', 'BMW', 'Volvo']
+>>> cars.sort()
+>>> print(cars)
+['BMW', 'Ford', 'Volvo']
+>>> def myFunc(e):
+...   return e['year']
+... cars = [
+  File "<stdin>", line 3
+    cars = [
+    ^^^^
+SyntaxError: invalid syntax
+>>>   {'car': 'Ford', 'year': 2005},
+  File "<stdin>", line 1
+    {'car': 'Ford', 'year': 2005},
+IndentationError: unexpected indent
+>>>   {'car': 'Mitsubishi', 'year': 2000},
+  File "<stdin>", line 1
+    {'car': 'Mitsubishi', 'year': 2000},
+IndentationError: unexpected indent
+>>>   {'car': 'BMW', 'year': 2019},
+  File "<stdin>", line 1
+    {'car': 'BMW', 'year': 2019},
+IndentationError: unexpected indent
+>>>   {'car': 'VW', 'year': 2011}
+  File "<stdin>", line 1
+    {'car': 'VW', 'year': 2011}
+IndentationError: unexpected indent
+>>> ]
+  File "<stdin>", line 1
+    ]
+    ^
+SyntaxError: unmatched ']'
+>>> cars.sort(key=myFunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myFunc' is not defined
+>>> print(cars)
+['BMW', 'Ford', 'Volvo']
+>>> # A function that returns the length of the value:
+>>> def myFunc(e):
+...   return len(e)
+... cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+  File "<stdin>", line 3
+    cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+    ^^^^
+SyntaxError: invalid syntax
+>>> cars.sort(reverse=True, key=myFunc)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myFunc' is not defined
+>>> print(cars)
+['BMW', 'Ford', 'Volvo']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.remove("banana")
+>>> print(fruits)
+['apple', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> fruits.insert(1, "orange")
+>>> print(fruits)
+['apple', 'orange', 'banana', 'cherry']
+>>> fruits = ['apple', 'banana', 'cherry']
+>>> points = (1, 4, 5, 9)
+>>> fruits.extend(points)
+>>> print(fruits)
+['apple', 'banana', 'cherry', 1, 4, 5, 9]
+>>> fruits = ["apple", "banana", "cherry"]
+>>> x = fruits.copy()
+>>> print(x)
+['apple', 'banana', 'cherry']
+>>> a = ["apple", "banana", "cherry"]
+>>> b = ["Ford", "BMW", "Volvo"]
+>>> a.append(b)
+>>> print(a)
+['apple', 'banana', 'cherry', ['Ford', 'BMW', 'Volvo']]
+>>>
