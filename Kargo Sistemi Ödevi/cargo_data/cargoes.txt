@@ -1,0 +1,3 @@
+142 20 Laptop Hamza 395 waiting 220 Fatih
+285 400 Book Bouba 856 waiting 8400 Umraniye
+347 500 Salt Hamza 395 waiting 5500 Avcilar
